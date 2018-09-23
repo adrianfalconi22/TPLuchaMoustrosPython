@@ -14,17 +14,17 @@ class MoustroTest(unittest.TestCase):
 
     """compara mal?"""
     def test_tipo_1(self):
-        monstruo =  Monstruo(Agua(), Fuego())
-        elemento = monstruo.elemento_x
+        monstruo =  Monstruo(Agua, Fuego)
+        elemento = monstruo.elemento_x()
         print(elemento)
-        self.assertEqual(str(Agua()), str(elemento))
+        self.assertEqual(str(Agua), str(elemento))
 
     """compara mal?"""
     def test_tipo_2(self):
-        monstruo = Monstruo(Tierra(), Fuego())
-        elemento = monstruo.elemento_y
+        monstruo = Monstruo(Tierra, Fuego)
+        elemento = monstruo.elemento_y()
         print(elemento)
-        self.assertEqual(Fuego(), elemento)
+        self.assertEqual(Fuego, elemento)
 
     """no se como probar cuando espero un error, devuelve el mensaje tipos iguales pero lo está devolviendo siempre
     asi que no se si esta andando bien este test"""

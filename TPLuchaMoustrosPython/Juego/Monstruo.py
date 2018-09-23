@@ -20,11 +20,11 @@ class Monstruo(object):
     def vida_moustro(self):
         return self.vida
 
-    def elemento_1(self):
-        return self.elementos(0)
+    def elemento_x(self):
+        return self.elementos[0]
 
-    def elemento_2(self):
-        return self.elementos(1)
+    def elemento_y(self):
+        return self.elementos[1]
 
 """
 moustro = Moustro(Agua, Agua)"""
